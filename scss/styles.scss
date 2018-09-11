@@ -1,0 +1,70 @@
+@import "variables/variables";
+
+
+@mixin sexy-border($color, $width) {
+  border-bottom: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+}
+
+p { @include sexy-border(blue, 2px); }
+
+/* ----------------------------------------
+  BOTONES
+----------------------------------------*/
+@mixin btn-my-green($color, $text) {
+  background-color: $color;
+  color: $text;
+}
+.btn-my-green {
+  @include btn-my-green($color-green, white);
+}
+.btn-my-green:hover {
+  @include btn-my-green($color-green * 0.8, white * 0.9);
+}
+
+
+@mixin btn-my-btn($color, $text) {
+  background-color: $color;
+  color: $text;
+}
+.btn-my-btn {
+  @include btn-my-btn($color-yellow, orange);
+}
+.btn-my-btn:hover {
+  @include btn-my-btn($color-yellow * 0.9, #000);
+}
+
+
+@mixin btn-my-purple($color, $text) {
+  background-color: $color;
+  color: $text;
+}
+.btn-my-purple {
+  @include btn-my-purple($color-purple, $color-bluegreen);
+}
+.btn-my-purple:hover {
+  @include btn-my-purple($color-purple * .8, $color-bluegreen * 1.2);
+}
+
+/*----------------------------------------
+  SHADOWS
+----------------------------------------*/
+@mixin my-shadow($color) {
+  box-shadow: $color;
+}
+.my-shadow:hover {
+  @include my-shadow(0 .5rem 1rem rgba(0,0,0,.15));
+}
+
+/*----------------------------------------
+  TRANSFORM
+----------------------------------------*/
+@mixin my-transform($translate) {
+  transform: $translate;
+}
+.my-transform:hover {
+  @include my-transform(translateY(-10px))
+}

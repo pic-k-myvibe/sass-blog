@@ -1,0 +1,46 @@
+p {
+  border-bottom-color: blue;
+  border-bottom-width: 2px;
+  border-bottom-style: dashed; }
+
+/* ----------------------------------------
+  BOTONES
+----------------------------------------*/
+.btn-my-green {
+  background-color: #adff2f;
+  color: white; }
+
+.btn-my-green:hover {
+  background-color: #8acc26;
+  color: #e6e6e6; }
+
+.btn-my-btn {
+  background-color: #ffff00;
+  color: orange; }
+
+.btn-my-btn:hover {
+  background-color: #e6e600;
+  color: #000; }
+
+.btn-my-purple {
+  background-color: #800080;
+  color: #008040; }
+
+.btn-my-purple:hover {
+  background-color: #660066;
+  color: #009a4d; }
+
+/*----------------------------------------
+  SHADOWS
+----------------------------------------*/
+.my-shadow:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+/*----------------------------------------
+  TRANSFORM
+----------------------------------------*/
+.my-transform:hover {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px); }
